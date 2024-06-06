@@ -36,3 +36,7 @@ img {
 :is(h2,  footer p[class='lead']) {
     text-align: center
 }
+
+.card {
+    width: 18rem;
+}
