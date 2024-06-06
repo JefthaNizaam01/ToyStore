@@ -8,12 +8,24 @@
 ::-webkit-scrollbar {
     display: none;
 }
+/* display grid */
+:is(body) {
+    display: grid;
+}
+/* Number of rows */
+body {
+    grid-template-rows: auto minmax(100%, 100dvh) 
+    auto;
+}
+
+
 /* navbar */
 .navbar {
     & img[alt = 'logo'] {
         width: 5rem
     }
 }
+
 /* All the images */
 img {
     aspect-ratio: 1;
@@ -21,6 +33,6 @@ img {
     object-position: center;
 }
 /* text-align: center */
-:is(h2) {
+:is(h2,  footer p[class='lead']) {
     text-align: center
 }
